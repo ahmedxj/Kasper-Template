@@ -157,7 +157,7 @@ header nav ul li a{
 header nav ul li a:hover,
 header nav ul li a:active{
     color: #00e6ff;
-    border-bottom: 1.2px solid aqua;
+    border-bottom: 1px solid aqua;
     position: relative;
     z-index: 3;
     font-weight: bold;
