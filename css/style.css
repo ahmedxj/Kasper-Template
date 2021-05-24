@@ -796,6 +796,8 @@ header nav .form img{
 .pricing .plans .plan{
     background-image: linear-gradient(46deg,#29323c00 23%,#bfdeff6b 100%);
     text-align: center;
+	border: 1px solid #0f749033;
+    box-shadow: 7px 6px 9px #00000047;
 
 }
 .pricing .plans .plan .head{
