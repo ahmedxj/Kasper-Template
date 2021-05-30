@@ -157,7 +157,7 @@ header nav ul li a{
 header nav ul li a:hover,
 header nav ul li a:active{
     color: #00e6ff;
-    border-bottom: 1px solid aqua;
+    border-bottom: 1.2px solid aqua;
     position: relative;
     z-index: 3;
     font-weight: bold;
@@ -584,6 +584,7 @@ header nav .form img{
     background-image: url(../img/23164.png);
     background-size: cover;
     position: relative;
+	background-attachment: fixed;
 }
 .stats::before{
     content: '';
@@ -762,6 +763,7 @@ header nav .form img{
     position: relative;
     text-align: center;
     color: white;
+	background-attachment: fixed;
 }
 .quote::before{
     content: '';
@@ -798,7 +800,6 @@ header nav .form img{
     text-align: center;
 	border: 1px solid #0f749033;
     box-shadow: 7px 6px 9px #00000047;
-
 }
 .pricing .plans .plan .head{
     padding: 40px 10px;
@@ -890,6 +891,7 @@ header nav .form img{
     background-size: cover;
     position: relative;
     color: white;
+	background-attachment: fixed;
 }
 .subscribe::before{
     content: '';
@@ -1125,8 +1127,9 @@ header nav .form img{
     align-items: center;
     opacity: 0;
     border-radius: 50px;
-    box-shadow: 5px 6px 10px #00000063;
+	box-shadow: 5px 6px 10px #00000063;
 }
+
 .backtop:hover{
     background-color: #0f7490;
     border: 1px solid var(--main-color);
