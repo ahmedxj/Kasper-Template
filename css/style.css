@@ -800,6 +800,11 @@ header nav .form img{
     text-align: center;
 	border: 1px solid #0f749033;
     box-shadow: 7px 6px 9px #00000047;
+    transition: 0.4s;
+}
+.pricing .plans .plan:hover{
+    box-shadow: 0px -1px 9px #31497342;
+    transition: 0.4s;
 }
 .pricing .plans .plan .head{
     padding: 40px 10px;
