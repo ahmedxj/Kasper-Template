@@ -125,25 +125,6 @@ header nav{
 header nav ul{
     display: flex;
 }
-@media (max-width: 768px){
-    header nav ul{
-        display: none;
-    } 
-    header nav .toggle-minu:hover + ul{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.555);
-        transition: .3s;
-        
-    }
-    header nav ul li a{
-        padding: 15px !important;
-    }
-}
 header nav ul li a{
     display: block;
     color :rgb(255, 255, 255); /* need edit */
@@ -177,15 +158,79 @@ header nav .form img{
     transform: translateY(-50%);
     right: 0;
 }
+.header1{
+    transition: .3s ease;
+    background-color: #013d4d!important;
+    height: 80px!important;
+    position: fixed!important;
+    z-index: 1111;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #00c7fccc;
+    box-shadow: 0px 5px 6px #00000069;
+}
+.header1 .container{
+    margin-top: -8px;
+    align-items: center;
+    position: relative;
+    min-height: 80px;
+}
+.header1 .container::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0px;
+    width: calc(100% - 30px);
+    height: 1px;
+    left: 15px;
+}
+.header1 nav ul li a {
+    padding: 40px 10px 30px 10px;
+}
+.toggle1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    transition: .3s;
+}
 @media (min-width: 768px){
     header nav .toggle-minu{
         display: none;
+    }
+}
+@media (max-width: 768px){
+    header nav ul{
+        display: none;
+    } 
+    header nav .toggle-minu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.555);
+        transition: .3s;
+        
+    }
+    header nav ul li a{
+        padding: 15px !important;
+    }
+    .header1 .container{
+        margin-top: auto;
     }
 }
 /*============ end header =============*/
 
 /* start Hero section */
 .hero{
+    /* transition: .9s ease; */
+    transition: .9s cubic-bezier(0.43, -0.19, 0.54, 1.16);
     min-height: 100vh;
     background-color: burlywood;
     background-image:url("../img/hero/003.jpg") ;
